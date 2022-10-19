@@ -1,27 +1,21 @@
 import './App.css';
 
-function App() {
-  return (
-    <>
-      <header>
-        <h1>My Movie Watchlist</h1>
-      </header>
+import Header from './components/Header';
+import MovieList from './components/MovieList';
+import Movie from './components/Movie';
 
+function App() {
+  console.log("App has rendered");
+  return (
+    // This is a fragment! It allows us to *technically*
+    <>
+
+      <Header />
+    
       <main>
-        <ul>
-          <li>
-            <p>Hocus Pocus</p>
-            <button>I have watched this movie</button>
-          </li>
-          <li>
-            <p>Halloweentown</p>
-            <button>I have watched this movie</button>
-          </li>
-          <li>
-            <p>Hocus Pocus 2</p>
-            <button>I have watched this movie</button>
-          </li>
-        </ul>
+    
+        <MovieList />
+    
       </main>
 
     </>
